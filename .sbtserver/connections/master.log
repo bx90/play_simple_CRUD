@@ -1,0 +1,80 @@
+New log file opened at Mon Mar 27 21:43:58 PDT 2017 by 62542@Boxiongs-MacBook-Pro-2.local
+Taking next connection to: 50021
+New client attempting to connect on port: 50022-50021
+  Address = /10.0.0.56:50021
+This client on port 50022 has uuid 8c773a8d-0dc4-4ff7-9a96-922773c73140 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-8c773a8d-0dc4-4ff7-9a96-922773c73140
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+New client attempting to connect on port: 50121-50021
+  Address = /10.0.0.56:50021
+Handshake exception on socket: 50121
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 50021
+New client attempting to connect on port: 50122-50021
+  Address = /10.0.0.56:50021
+This client on port 50122 has uuid 98cb7b51-25a5-4671-b2f3-d0752cb148cd configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-8c773a8d-0dc4-4ff7-9a96-922773c73140, play-fork-run-98cb7b51-25a5-4671-b2f3-d0752cb148cd
+Taking next connection to: 50021
+New client attempting to connect on port: 50123-50021
+  Address = /10.0.0.56:50021
+Handshake exception on socket: 50123
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 50021
+New client attempting to connect on port: 50124-50021
+  Address = /10.0.0.56:50021
+This client on port 50124 has uuid 022a5098-518c-4eb8-bc58-e2de9e262d81 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-8c773a8d-0dc4-4ff7-9a96-922773c73140, play-fork-run-98cb7b51-25a5-4671-b2f3-d0752cb148cd, play-fork-run-022a5098-518c-4eb8-bc58-e2de9e262d81
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50021

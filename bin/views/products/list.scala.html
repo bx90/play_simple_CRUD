@@ -1,0 +1,56 @@
+@(products: List[Product])
+
+@*Calling another template /app/views/main.scala.html.*@
+@main("Products catalogue") {
+	<h2>All Products</h2>
+	<script>
+		function del(urlToDelete) {
+			$.ajax({
+		 		url: urlToDelete,
+				type: 'DELETE',
+				success: function(results) {
+					location.reload();
+				}
+			}); 
+		}
+	</script>
+                 	
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>EAN</th>
+					<th>Name</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+			@for(product <- products) {
+				<tr>
+					<td>
+						<a href="@routes.Products.details(product.ean)">
+							@product.ean
+						</a>
+					</td>	
+					<td>
+						<a href="@routes.Products.details(product.ean)">
+							@product.name
+						</a>
+					</td>
+					<td>
+						<a href="@routes.Products.details(product.ean)">
+							@product.name
+						</a>
+						<button onclick="del('@routes.Products.delete(product.ean)')">
+						
+						delete</button>
+						</a>
+					</td>
+				</tr>	
+			}
+			</tbody>
+		</table>
+				<a class="btn" href="@routes.Products.list()">Cancel</a>
+				<a class="btn" href="@routes.Products.newProduct()">New</a>
+						
+	
+}
